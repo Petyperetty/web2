@@ -59,6 +59,8 @@ $controller->main($vars);
 // A modellekhez haszn�ljuk, egys�gesen nevezz�k el f�jljainkat
 // (oszt�ly nev�vel megegyez�, csupa kisbet�s .php)
 
+// az __autolad függvény már nem támogatott, helyette az spl_autolad_register() van.
+
 spl_autoload_register('autoload');
 
 function autoload($className)
